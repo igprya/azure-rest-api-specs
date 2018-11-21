@@ -219,7 +219,7 @@
               "provider": "Microsoft Azure NotificationHubs",
               "resource": "NotificationHub PnsCredential",
               "operation": "Resource Get Notification Hub PNS Credentials",
-              "description": "Get All Notification Hub PNS Credentials. This includes, WNS, MPNS, APNS, GCM and Baidu credentials"
+              "description": "Get All Notification Hub PNS Credentials. This includes, WNS, MPNS, APNS, GCM, FCM and Baidu credentials"
             }
           },
           {
