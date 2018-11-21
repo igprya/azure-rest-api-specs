@@ -1991,6 +1991,29 @@
       },
       "description": "Description of a NotificationHub GcmCredential."
     },
+    "FcmCredentialProperties": {
+      "properties": {
+        "fcmEndpoint": {
+          "type": "string",
+          "description": "The FCM endpoint."
+        },
+        "googleApiKey": {
+          "type": "string",
+          "description": "The Google API key."
+        }
+      },
+      "description": "Description of a NotificationHub FcmCredential."
+    },
+    "FcmCredential": {
+      "properties": {
+        "properties": {
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/FcmCredentialProperties",
+          "description": "Properties of NotificationHub FcmCredential."
+        }
+      },
+      "description": "Description of a NotificationHub FcmCredential."
+    },
     "MpnsCredentialProperties": {
       "properties": {
         "mpnsCertificate": {
@@ -2100,6 +2123,10 @@
         "gcmCredential": {
           "$ref": "#/definitions/GcmCredential",
           "description": "The GcmCredential of the created NotificationHub"
+        },
+        "fcmCredential": {
+          "$ref": "#/definitions/FcmCredential",
+          "description": "The FcmCredential of the created NotificationHub"
         },
         "mpnsCredential": {
           "$ref": "#/definitions/MpnsCredential",
@@ -2211,6 +2238,10 @@
         "gcmCredential": {
           "$ref": "#/definitions/GcmCredential",
           "description": "The GcmCredential of the created NotificationHub"
+        },
+        "fcmCredential": {
+          "$ref": "#/definitions/FcmCredential",
+          "description": "The FcmCredential of the created NotificationHub"
         },
         "mpnsCredential": {
           "$ref": "#/definitions/MpnsCredential",
